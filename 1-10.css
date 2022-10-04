@@ -10,7 +10,7 @@ header{
   background-color:#ff9a4b;
 }
 
-main {
+main{
   width:960px;
   margin:50px auto;
   display:flex;
@@ -22,6 +22,7 @@ main {
   padding:10px;
   position: relative;
   background-color:#eeeeee;
+  box-sizing: border-box;
 }
 
 .main-box:last-child{
@@ -67,45 +68,30 @@ footer{
 }
 
 @media screen and (max-width:1080px){
-    header{
-    width:100vw;
+  header{
+    width:100%;
   }
 
   main{
-    width:100%;
-    padding:0 30px;
-    display:block;
+    width:90%;
   }
 
   .main-box{
     width:100%;
-    margin-bottom:20px;
-  }
-
-  .main-box:last-child{
-    margin-bottom:0;
   }
 }
 
 
 @media screen and (max-width:768px){
-
-  header{
-    width:100vw;
-  }
-
   main{
-    width:100%;
-    padding:0 30px;
     display:block;
   }
 
-  .main-box{
-    width:100%;
+    .main-box{
     margin-bottom:20px;
   }
 
-  .main-box:last-child{
+    .main-box:last-child{
     margin-bottom:0;
   }
 }
